@@ -1,0 +1,184 @@
+#projects
+  width: 100%
+  height: 100vh
+  background: #333333
+
+  .content
+    display: flex
+    flex-direction: row
+
+.projects-list
+  width: 100%
+  height: 100%
+  display: flex
+  flex-flow: row nowrap
+
+  &__item
+    width: 25%
+    flex: 1 !important
+    height: 100%
+    display: flex
+    align-items: center
+    overflow: hidden
+    position: relative
+    transition: .5s
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: 1
+      filter: brightness(50%)
+      transition: .5s
+
+    &:hover
+      //flex: 1 !important
+      //width: 13% !important
+
+      img
+        width: 110%
+        filter: brightness(100%)
+
+      .btn-more
+        opacity: 1
+        z-index: 50
+        display: flex
+
+  //.slick-slide:hover
+  //  flex: 1 !important
+
+      //.btn-slider, .btn-slider--up
+      //  display: none
+    //
+    //.btn
+    //  display: none
+
+.projects-list__item--title
+  width: 100%
+  height: 118px
+  background: #333333
+  border-top: 1px solid #4f5052
+  border-bottom: 1px solid #4f5052
+  display: flex
+  flex-direction: column
+  position: absolute
+  z-index: 1
+
+  span
+    font-size: 18px
+    font-family: "Montserrat"
+    color: rgb(255, 255, 255)
+    line-height: 1.111
+    text-align: center
+    display: block
+    margin: 25px 0 20px
+
+    &:before
+      content: ''
+      display: inline-block
+      background-color: rgb(255, 255, 255)
+      width: 20px
+      height: 1px
+      bottom: 5px
+      right: 10px
+      position: relative
+
+    &:after
+      content: ''
+      display: inline-block
+      background-color: rgb(255, 255, 255)
+      width: 20px
+      height: 1px
+      bottom: 5px
+      left: 10px
+      position: relative
+
+
+  h3
+    font-size: 1vmax
+    font-family: "Proun"
+    color: rgb(255, 255, 255)
+    line-height: 1.2
+    text-align: center
+    display: block
+    padding: 0 10px
+
+.popup-projects-gallery
+  width: 100%
+  height: 100%
+  position: fixed
+  right: 0
+  top: 0
+  transition: opacity 0.3s 0s, visibility 0s 0.3s
+  opacity: 0
+  z-index: 100
+  visibility: hidden
+  background-color: rgba(0, 0, 0, 0.85)
+.more-gallery
+  width: calc(100% - 244px) !important
+  height: 100% !important
+  display: flex
+  position: absolute
+  right: 0
+  top: 0
+  &__item
+    width: 100%
+    height: 100%
+    display: flex
+    flex-flow: row
+    justify-content: flex-end
+    align-items: center
+    position: relative
+    z-index: 50
+    float: right
+    &__image
+      position: relative
+      width: 75%
+      //padding-bottom: 90px
+      img
+        width: 100%
+        object-fit: cover
+      //.more-gallery__item__pagination
+      //  .more-gallery__item__pagination--prev
+      //  .more-gallery__item__pagination--next
+
+.more-gallery__item__description
+  width: 25%
+  height: 100vh !important
+  background-color: #4d5151
+  padding: 60px 1.5vw
+  position: relative
+  .more-gallery__item__description--close
+  h3
+    font-size: 1.5vmax
+    font-family: "Proun-bold"
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    line-height: 1.2
+    padding: 7vw 0 2vw
+  p
+    font-size: 1vmax
+    font-family: "Montserrat"
+    color: rgb(255, 254, 254)
+    line-height: 1.5
+  //.more-gallery__item__description--btn-prev
+  //.more-gallery__item__description--btn-next
+
+.pagination
+  width: 70px
+  height: 48px
+  display: inline-block
+  text-align: center
+  font: bold 20px "Proun-bold"
+  color: #fff
+  margin: 0 40px
+  position: relative
+  line-height: 48px
+
+
+
+
+.is-visible
+  opacity: 1
+  visibility: visible
+  transition: opacity 0.3s 0s, visibility 0s 0s

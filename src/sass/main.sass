@@ -1,0 +1,364 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  outline: none
+
+ul
+  list-style: none
+  padding: 0
+
+a
+  text-decoration: none
+  color: #fff
+  &:hover
+    font-weight: 600
+
+section
+  overflow: hidden
+
+.content
+  width: calc(100% - 244px)
+  height: 100%
+  position: relative
+  margin-left: 244px
+  //overflow: hidden
+
+.btn-slider
+  width: 48px !important
+  height: 48px !important
+  border: 1px solid rgb(255, 255, 255) !important
+  z-index: 10 !important
+  position: absolute !important
+  background: rgb(62, 63, 65) !important
+  top: 50% !important
+  left: 50% !important
+  transform: translate(-50%, -50%)
+  margin-top: -38px
+  cursor: pointer
+  transition: all 600ms
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 55
+    display: inline-block
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 12px solid rgb(255, 255, 255)
+    transition: all 600ms
+  &--up
+    left: 50%
+    transform: translate(-50%, -44px) rotate(90deg)
+  &--dawn
+    left: 50%
+    transform: translate(-50%, 72px) rotate(-90deg)
+.btn-slider:hover
+  background: rgb(255, 255, 255) !important
+  color: rgb(62, 63, 65)
+  border: 1px solid rgb(62, 63, 65) !important
+  font-weight: normal
+  transition: all 600ms
+  &:after
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 12px solid rgb(62, 63, 65)
+
+.more-gallery__item__description--close
+  width: 190px
+  height: 48px !important
+  border: 1px solid rgb(255, 255, 255) !important
+  z-index: 50 !important
+  background: rgb(62, 63, 65) !important
+  font-size: 14px
+  font-family: "Proun-bold"
+  color: rgb(255, 255, 255)
+  font-weight: bold
+  text-align: right
+  position: absolute
+  left: 1.5vw
+  top: 60px
+  padding: 15px
+  transition: all 600ms
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 24px
+    transform: translate(-50%, -50%) rotate(90deg)
+    z-index: 55
+    display: inline-block
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 12px solid rgb(255, 255, 255)
+    transition: all 600ms
+  &:hover
+    background: rgb(255, 255, 255) !important
+    color: rgb(62, 63, 65)
+    border: 1px solid rgb(62, 63, 65) !important
+    font-weight: normal
+    transition: all 600ms
+    &:after
+      width: 0
+      height: 0
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 12px solid rgb(62, 63, 65)
+
+//.more-gallery__item__description
+.more-gallery__item--btn-prev
+  width: 48px !important
+  height: 48px !important
+  border: 1px solid rgb(255, 255, 255) !important
+  z-index: 50 !important
+  position: absolute !important
+  transform:
+  background: rgb(62, 63, 65) !important
+  left: 1.5vw !important
+  bottom: 60px
+  transform: rotate(90deg)
+  transition: all 600ms
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 55
+    display: inline-block
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 12px solid rgb(255, 255, 255)
+    transition: all 600ms
+  &:hover
+    background: rgb(255, 255, 255) !important
+    color: rgb(62, 63, 65)
+    border: 1px solid rgb(62, 63, 65) !important
+    font-weight: normal
+    transition: all 600ms
+    &:after
+      width: 0
+      height: 0
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 12px solid rgb(62, 63, 65)
+
+.more-gallery__item__description
+  .more-gallery__item--btn-next
+    width: 180px
+    max-width: 220px
+    height: 48px !important
+    border: 1px solid rgb(255, 255, 255) !important
+    z-index: 50 !important
+    background: rgb(62, 63, 65) !important
+    font-size: 14px
+    font-family: "Proun-bold"
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    text-align: left
+    position: absolute
+    right: 1.5vw
+    bottom: 60px
+    padding: 15px
+    transition: all 600ms
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 6px
+      transform: translate(-50%, -50%) rotate(-90deg)
+      z-index: 55
+      display: inline-block
+      width: 0
+      height: 0
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 12px solid rgb(255, 255, 255)
+      transition: all 600ms
+    &:hover
+      background: rgb(255, 255, 255) !important
+      color: rgb(62, 63, 65)
+      border: 1px solid rgb(62, 63, 65) !important
+      font-weight: normal
+      transition: all 600ms
+      &:after
+        width: 0
+        height: 0
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
+        border-top: 12px solid rgb(62, 63, 65)
+
+.more-gallery__item__pagination
+  width: 100%
+  height: 48px
+  position: relative !important
+  text-align: center
+  margin-top: 48px
+  display: flex
+  justify-content: center
+  align-items: center
+  .more-gallery__item--btn-prev
+    position: relative !important
+    bottom: 0 !important
+    transform: rotate(90deg)
+    padding: 15px
+    display: inline-block
+    left: 0 !important
+    //margin-top: 70px
+
+  .more-gallery__item--btn-next
+    width: 48px !important
+    height: 48px !important
+    border: 1px solid rgb(255, 255, 255) !important
+    z-index: 50 !important
+    background: rgb(62, 63, 65) !important
+    position: relative
+    padding: 15px
+    display: inline-block
+    transition: all 600ms
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 6px
+      transform: translate(-50%, -50%) rotate(-90deg)
+      z-index: 55
+      display: inline-block
+      width: 0
+      height: 0
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 12px solid rgb(255, 255, 255)
+      transition: all 600ms
+    &:hover
+      background: rgb(255, 255, 255) !important
+      color: rgb(62, 63, 65)
+      border: 1px solid rgb(62, 63, 65) !important
+      font-weight: normal
+      transition: all 600ms
+      &:after
+        width: 0
+        height: 0
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
+        border-top: 12px solid rgb(62, 63, 65)
+
+.btn-more
+  opacity: 0
+  height: 48px
+  border: 1px solid rgb(255, 255, 255)
+  background-color: rgb(62, 63, 65)
+  font: 14px "Proun-bold"
+  padding: 15px
+  position: absolute
+  left: 50%
+  top: 70%
+  transform: translate(-50%, -50%)
+  transition: .2s
+  &:hover
+    background: rgb(255, 255, 255)
+    color: rgb(62, 63, 65)
+    font-weight: normal
+    transition: all 600ms
+
+.btn-more,
+.btn-more::before,
+.btn-more::after,
+.btn-more span::before,
+.btn-more span::after
+  transition: all ease .5s
+
+.btn-more
+  position: absolute
+  display: inline-block
+  padding: 0.3em
+  border: solid 1px
+  text-transform: uppercase
+  cursor: pointer
+
+
+.btn-more span
+  display: inline-block
+  width: 100%
+  padding: 0.7em 2em
+
+.btn-more:hover span
+  color: rgb(62, 63, 65)
+
+.btn-more::before,
+.btn-more::after,
+.btn-more span::before,
+.btn-more span::after
+  content: ''
+  position: absolute
+  border: 1px
+
+.btn-more::before,
+.btn-more span::before
+  border-style: solid none
+
+.btn-more::before,
+.btn-more span::after
+  left: 0
+  top: -0.4em
+  width: 100%
+  height: calc(100% + 0.8em)
+
+.btn-more::after,
+.btn-more span::after
+  border-style: none solid
+
+.btn-more::after,
+.btn-more span::before
+  top: 0
+  left: -0.4em
+  height: 100%
+  width: calc(100% + 0.8em)
+
+.btn-more:hover::after,
+.btn-more:hover span::after
+  transform: scaleY(0)
+
+.btn-more:hover::before,
+.btn-more:hover span::before
+  transform: scaleX(0)
+
+.btn-more:hover span::after,
+.btn-more:hover span::before
+  opacity: 0
+
+//.fp-scrollable, .fp-tableCell
+//  display: flex
+.slick-initialized .slick-slide
+  display: flex !important
+  height: 100vh !important
+  flex: 1
+  //&:hover
+  //  flex: 1.5
+
+
+//.slick-list
+  //display: flex !important
+  //flex-flow: row wrap
+
+@import "fonts"
+@import "aside"
+@import "home"
+@import "about"
+@import "team"
+@import "projects"
+@import "partners"
+@import "contacts"
+@import "media"
+@import "../css/libs.min.css"
+
